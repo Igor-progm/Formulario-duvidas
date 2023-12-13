@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url(/src/images/bg-repeat.jpg);
+    background-image: url(../images/bg-repeat.jpg);
     background-size: contain;
     height: 100vh;
 }
