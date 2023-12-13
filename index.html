@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Ajuda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <main>
+        <section class="page-info">
+            <h1 class="title">
+                FICOU COM DÚVIDA?
+                <br>
+                NOS MANDE UMA MENSAGEM!
+            </h1>
+
+            <p class="paragraph">
+                caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.
+            </p>
+        </section>
+
+        <section class="fillcard">
+            <div class="card">
+                <input type="text" class="input" id="nomecompleto" name="nomecompleto" placeholder="Nome Completo *">
+                
+                <span class="error-message">campo obrigatório</span>
+                
+                <input type="email" class="input" id="email" name="email" placeholder="Email *">
+                
+                <span class="error-message">campo obrigatório</span>
+                
+                <input type="tel" class="input" id="telefone" name="telefone" pattern="[0-9]{11}" placeholder="Telefone *">
+                
+                <span class="error-message">campo obrigatório</span>
+                
+                <textarea name="mensagem" id="mensagem" class="input mensagem" placeholder="Mensagem *" cols="30" rows="10"></textarea>
+
+                <span class="error-message">campo obrigatório</span>
+            </div>
+
+            <p>*campos obrigatórios</p> 
+
+            <button id="btn" class="btn">Enviar</button>
+        </section>
+    </main>
+
+    <script src="./src/js/forms.js"></script>
+</body>
+
+</html>
