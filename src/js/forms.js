@@ -2,22 +2,18 @@ const inputPreenchido = document.querySelectorAll('.input');
 
 const enviar = document.getElementById('btn');
 
-const inserirMensagemDeErro = document.querySelectorAll('.error-message');
+enviar.addEventListener('click', (e) => {
+    e.preventDefault()
 
-inputPreenchido.forEach((input, index) => {
-    enviar.addEventListener('click', () => {
-        verificarPreenchimento(input, index);
-    })
-})
-
-function verificarPreenchimento(input, index) {
-        inputPreenchido !== ""
-        if (input.value !== "") {
-            inserirMensagemDeErro[index].classList.remove('show')
+    inputPreenchido.forEach((input) => {
+        if (input.value) {
+            input.classList.remove('error');
+            input.nextElementSibling.classList.remove('show')
             input.classList.add('filled');
         } else {
             input.classList.remove('filled');
             input.classList.add('error');
-            inserirMensagemDeErro[index].classList.add('show')
+            input.nextElementSibling.classList.add('show');
         }
-};
+    })
+})
