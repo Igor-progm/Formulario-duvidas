@@ -1,0 +1,15 @@
+@media (max-width: 728px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px) {
+    .fillcard {
+        width: 85%;
+    }
+
+    .fillcard .card {
+        width: 100%;
+    }
+}
